@@ -1,20 +1,25 @@
+import { Cabecalho } from './components/Cabecalho';
+import { Conteudo } from './components/Conteudo';
+import { Fundo } from './components/Fundo';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fundo>
+      <Cabecalho>
+        <img
+          src={process.env.PUBLIC_URL + '/logo-pequeno.png'}
+          alt="logo sorteador de amigos"
+        />
+        <div style={{ zIndex: 1 }}>
+          <img
+            src={process.env.PUBLIC_URL + '/participante.png'}
+            style={{ marginTop: '55px' }}
+            alt="logo sorteador de amigos"
+          />
+        </div>
+      </Cabecalho>
+      <Conteudo />
+    </Fundo>
   );
 }
 
