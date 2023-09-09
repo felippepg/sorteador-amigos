@@ -8,6 +8,7 @@ export const Conteudo = styled.div`
   border: solid black 2px;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;

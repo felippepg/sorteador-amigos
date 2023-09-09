@@ -1,7 +1,8 @@
-import Formulario from '../components/Formulario';
-import { Cabecalho } from '../components/Cabecalho';
-import { Conteudo } from '../components/Conteudo';
-import { Fundo } from '../components/Fundo';
+import Formulario from '../components/Formulario/Formulario';
+import { Cabecalho } from '../components/Cabecalho/Cabecalho';
+import { Conteudo } from '../components/Conteudo/Conteudo';
+import { Fundo } from '../components/Fundo/Fundo';
+import { Title } from '../components/Titulo/Titulo';
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
         </div>
       </Cabecalho>
       <Conteudo>
+        <Title>Vamos Começar</Title>
         <Formulario />
       </Conteudo>
     </Fundo>
