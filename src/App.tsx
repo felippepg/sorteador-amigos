@@ -1,25 +1,16 @@
-import { Cabecalho } from './components/Cabecalho';
-import { Conteudo } from './components/Conteudo';
-import { Fundo } from './components/Fundo';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <Fundo>
-      <Cabecalho>
-        <img
-          src={process.env.PUBLIC_URL + '/logo-pequeno.png'}
-          alt="logo sorteador de amigos"
-        />
-        <div style={{ zIndex: 1 }}>
-          <img
-            src={process.env.PUBLIC_URL + '/participante.png'}
-            style={{ marginTop: '55px' }}
-            alt="logo sorteador de amigos"
-          />
-        </div>
-      </Cabecalho>
-      <Conteudo />
-    </Fundo>
+    <BrowserRouter>
+      <RecoilRoot>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </RecoilRoot>
+    </BrowserRouter>
   );
 }
 

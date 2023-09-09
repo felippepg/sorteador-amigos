@@ -7,4 +7,7 @@ export const Conteudo = styled.div`
   border-radius: 60px 60px 0 0;
   border: solid black 2px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
