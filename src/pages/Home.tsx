@@ -3,6 +3,7 @@ import { Cabecalho } from '../components/Cabecalho/Cabecalho';
 import { Conteudo } from '../components/Conteudo/Conteudo';
 import { Fundo } from '../components/Fundo/Fundo';
 import { Title } from '../components/Titulo/Titulo';
+import ListaParticipantes from '../components/ListaParticipantes/ListaParticipantes';
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
       <Conteudo>
         <Title>Vamos Começar</Title>
         <Formulario />
+        <ListaParticipantes />
       </Conteudo>
     </Fundo>
   );
