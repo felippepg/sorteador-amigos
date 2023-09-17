@@ -6,4 +6,5 @@ export const SubmitButton = styled.input`
   width: 40%;
   border-radius: 0 60px 60px 0;
   cursor: pointer;
+  font-size: 1em;
 `;

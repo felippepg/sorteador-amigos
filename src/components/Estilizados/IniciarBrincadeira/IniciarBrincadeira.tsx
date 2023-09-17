@@ -8,4 +8,6 @@ export const IniciarBrincadeira = styled.button`
   margin-top: 0.5em;
   cursor: pointer;
   font-size: 25px;
+  display: flex;
+  align-items: center; /* Centraliza o ícone verticalmente */
 `;
