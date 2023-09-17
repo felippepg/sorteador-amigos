@@ -1,9 +1,10 @@
-import Formulario from '../components/Formulario/Formulario';
-import { Cabecalho } from '../components/Cabecalho/Cabecalho';
-import { Conteudo } from '../components/Conteudo/Conteudo';
-import { Fundo } from '../components/Fundo/Fundo';
-import { Title } from '../components/Titulo/Titulo';
-import ListaParticipantes from '../components/ListaParticipantes/ListaParticipantes';
+import Formulario from '../components/Funcionais/Formulario/Formulario';
+import { Cabecalho } from '../components/Estilizados/Cabecalho/Cabecalho';
+import { Conteudo } from '../components/Estilizados/Conteudo/Conteudo';
+import { Fundo } from '../components/Estilizados/Fundo/Fundo';
+import { Title } from '../components/Estilizados/Titulo/Titulo';
+import ListaParticipantes from '../components/Funcionais/ListaParticipantes/ListaParticipantes';
+import Rodape from '../components/Funcionais/Rodape/Rodape';
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function Home() {
         <Title>Vamos Começar</Title>
         <Formulario />
         <ListaParticipantes />
+        <Rodape />
       </Conteudo>
     </Fundo>
   );

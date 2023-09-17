@@ -1,10 +1,10 @@
 import { useRef, useState } from 'react';
-import { useAdicionarParticipante } from '../../state/hooks/useAdicionarParticipante';
-import { useMensagemErro } from '../../state/hooks/useMensagemErro';
-import { Form } from '../Form/Form';
-import { SubmitButton } from '../SubmitButton/SubmitButton';
-import { TextField } from '../TextField/TextField';
-import { MensagemErro } from '../MensagemErro/MensagemErro';
+import { useAdicionarParticipante } from '../../../state/hooks/useAdicionarParticipante';
+import { useMensagemErro } from '../../../state/hooks/useMensagemErro';
+import { Form } from '../../Estilizados/Form/Form';
+import { SubmitButton } from '../../Estilizados/SubmitButton/SubmitButton';
+import { TextField } from '../../Estilizados/TextField/TextField';
+import { MensagemErro } from '../../Estilizados/MensagemErro/MensagemErro';
 
 const Formulario = () => {
   const [nome, setNome] = useState('');

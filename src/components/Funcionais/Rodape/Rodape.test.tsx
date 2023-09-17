@@ -1,11 +1,20 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { RecoilRoot } from 'recoil';
 import Rodape from './Rodape';
-import { useListaParticipantes } from '../../state/hooks/useListaParticipantes';
+import { useListaParticipantes } from '../../../state/hooks/useListaParticipantes';
 
-jest.mock('../../state/hooks/useListaParticipantes', () => {
+jest.mock('../../../state/hooks/useListaParticipantes', () => {
   return {
     useListaParticipantes: jest.fn(),
+  };
+});
+
+const mockNavegacao = jest.fn();
+
+jest.mock('react-router-dom', () => {
+  return {
+    // useNavigate: mockNavegacao,
+    useNavigate: () => mockNavegacao,
   };
 });
 
@@ -42,5 +51,17 @@ describe('Quando o numero de participantes for suficiente', () => {
     );
     const button = screen.getByRole('button');
     expect(button).toBeEnabled();
+  });
+
+  test('Deveria navegar a rota de sorteio', () => {
+    render(
+      <RecoilRoot>
+        <Rodape />
+      </RecoilRoot>
+    );
+
+    const button = screen.getByRole('button');
+    fireEvent.click(button);
+    expect(mockNavegacao).toHaveBeenCalled();
   });
 });
