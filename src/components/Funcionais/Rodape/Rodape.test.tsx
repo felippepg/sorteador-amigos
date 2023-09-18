@@ -10,11 +10,17 @@ jest.mock('../../../state/hooks/useListaParticipantes', () => {
 });
 
 const mockNavegacao = jest.fn();
+const mockSorteio = jest.fn();
 
 jest.mock('react-router-dom', () => {
   return {
-    // useNavigate: mockNavegacao,
     useNavigate: () => mockNavegacao,
+  };
+});
+
+jest.mock('../../../state/hooks/useSortearAmigoSecreto', () => {
+  return {
+    useSortearAmigoSecreto: () => mockSorteio,
   };
 });
 
@@ -63,5 +69,6 @@ describe('Quando o numero de participantes for suficiente', () => {
     const button = screen.getByRole('button');
     fireEvent.click(button);
     expect(mockNavegacao).toHaveBeenCalled();
+    expect(mockSorteio).toHaveBeenCalled();
   });
 });
