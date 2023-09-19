@@ -7,4 +7,10 @@ export const SubmitButton = styled.input`
   border-radius: 0 60px 60px 0;
   cursor: pointer;
   font-size: 1em;
+
+  @media (max-width: 576px) {
+    border-radius: 60px;
+    padding: 0.5em;
+    margin-top: 0.5em;
+  }
 `;

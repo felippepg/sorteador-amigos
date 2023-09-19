@@ -5,6 +5,7 @@ import { Form } from '../../Estilizados/Form/Form';
 import { SubmitButton } from '../../Estilizados/SubmitButton/SubmitButton';
 import { TextField } from '../../Estilizados/TextField/TextField';
 import { MensagemErro } from '../../Estilizados/MensagemErro/MensagemErro';
+import { Box } from './Box';
 
 const Formulario = () => {
   const [nome, setNome] = useState('');
@@ -21,7 +22,7 @@ const Formulario = () => {
 
   return (
     <Form onSubmit={adicionarParticipante}>
-      <div style={{ display: 'flex' }}>
+      <Box>
         <TextField
           ref={inputRef}
           type="text"
@@ -32,7 +33,7 @@ const Formulario = () => {
           placeholder="Insira os nomes dos participantes"
         />
         <SubmitButton disabled={!nome} type="submit" value="Adicionar" />
-      </div>
+      </Box>
 
       {mensagemErro && <MensagemErro role="alert">{mensagemErro}</MensagemErro>}
     </Form>

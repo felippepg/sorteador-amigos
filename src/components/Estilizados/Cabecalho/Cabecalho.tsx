@@ -3,7 +3,7 @@ import { Header } from '../Header/Header';
 const Cabecalho = () => {
   return (
     <Header>
-      <img
+      {/* <img
         src={process.env.PUBLIC_URL + '/logo-pequeno.png'}
         alt="logo sorteador de amigos"
       />
@@ -13,7 +13,7 @@ const Cabecalho = () => {
           style={{ marginTop: '55px' }}
           alt="logo participante"
         />
-      </div>
+      </div> */}
     </Header>
   );
 };
