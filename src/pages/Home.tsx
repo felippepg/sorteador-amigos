@@ -13,8 +13,8 @@ function Home() {
       <Conteudo>
         <Title>Vamos Começar</Title>
         <Formulario />
-        {/* <ListaParticipantes />
-        <Rodape /> */}
+        <ListaParticipantes />
+        <Rodape />
       </Conteudo>
     </Fundo>
   );

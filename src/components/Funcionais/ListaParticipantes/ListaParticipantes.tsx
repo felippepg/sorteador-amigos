@@ -3,9 +3,11 @@ import { useListaParticipantes } from '../../../state/hooks/useListaParticipante
 const ListaParticipantes = () => {
   const listaParticipantes = useListaParticipantes();
   return (
-    <ul>
+    <ul style={{ listStyle: 'none' }}>
       {listaParticipantes.map((participante) => (
-        <li key={participante}>{participante}</li>
+        <li style={{ fontSize: '20px' }} key={participante}>
+          {participante}
+        </li>
       ))}
     </ul>
   );

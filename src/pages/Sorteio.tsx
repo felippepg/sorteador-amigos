@@ -1,6 +1,7 @@
 import { Botao } from '../components/Estilizados/Botao/Botao';
 import Cabecalho from '../components/Estilizados/Cabecalho/Cabecalho';
 import { Conteudo } from '../components/Estilizados/Conteudo/Conteudo';
+import { Form } from '../components/Estilizados/Form/Form';
 import { Fundo } from '../components/Estilizados/Fundo/Fundo';
 import { Icon } from '../components/Estilizados/Icon/Icon';
 import { Select } from '../components/Estilizados/Select/Select';
@@ -36,14 +37,14 @@ const Sorteio = () => {
             justifyContent: 'center',
           }}
         >
-          <form
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              width: '500px',
-            }}
+          <Form
+            // style={{
+            //   display: 'flex',
+            //   flexDirection: 'column',
+            //   alignItems: 'center',
+            //   justifyContent: 'center',
+            //   width: '500px',
+            // }}
             onSubmit={buscarAmigoSecreto}
           >
             <Select
@@ -63,7 +64,7 @@ const Sorteio = () => {
                 <option key={participante}>{participante}</option>
               ))}
             </Select>
-            <span
+            {/* <span
               style={{
                 fontSize: '20px',
                 textAlign: 'center',
@@ -72,12 +73,12 @@ const Sorteio = () => {
               }}
             >
               Clique em em sortear para ver quem é seu amigo secreto!
-            </span>
+            </span> */}
             <Botao>
               <Icon className="material-icons">casino</Icon>
               Sortear
             </Botao>
-          </form>
+          </Form>
           {amigoSecreto && (
             <p
               role="alert"

@@ -4,6 +4,7 @@ import { Botao } from '../../Estilizados/Botao/Botao';
 import { Footer } from '../../Estilizados/Footer/Footer';
 import { Icon } from '../../Estilizados/Icon/Icon';
 import { useSortearAmigoSecreto } from '../../../state/hooks/useSortearAmigoSecreto';
+import { Image, ImageSacola } from '../Formulario/Img';
 
 const Rodape = () => {
   const listaParticipantes = useListaParticipantes();
@@ -13,6 +14,7 @@ const Rodape = () => {
   return (
     <Footer>
       <Botao
+        fontSize="20px"
         onClick={() => {
           navegacao('/sorteio');
           sortear();
@@ -23,7 +25,7 @@ const Rodape = () => {
         Iniciar brincadeira!
       </Botao>
 
-      <img
+      <ImageSacola
         src={process.env.PUBLIC_URL + '/sacolas.png'}
         alt="logo sorteador de amigos"
       />

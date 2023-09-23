@@ -1,19 +1,33 @@
+import {
+  Image,
+  ImageContainer,
+  ImageLogoContainer,
+} from '../../Funcionais/Formulario/Img';
 import { Header } from '../Header/Header';
 
 const Cabecalho = () => {
   return (
     <Header>
-      {/* <img
-        src={process.env.PUBLIC_URL + '/logo-pequeno.png'}
-        alt="logo sorteador de amigos"
-      />
-      <div style={{ zIndex: 1 }}>
-        <img
-          src={process.env.PUBLIC_URL + '/participante.png'}
-          style={{ marginTop: '55px' }}
-          alt="logo participante"
-        />
-      </div> */}
+      <div
+        style={{ marginTop: '12vh', display: 'flex', justifyContent: 'center' }}
+      >
+        <ImageLogoContainer>
+          <Image
+            src={process.env.PUBLIC_URL + '/logo-pequeno.png'}
+            alt="logo sorteador de amigos"
+          />
+        </ImageLogoContainer>
+      </div>
+
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <ImageContainer>
+          <Image
+            src={process.env.PUBLIC_URL + '/participante.png'}
+            marginTop="5vh"
+            alt="logo participante"
+          />
+        </ImageContainer>
+      </div>
     </Header>
   );
 };
