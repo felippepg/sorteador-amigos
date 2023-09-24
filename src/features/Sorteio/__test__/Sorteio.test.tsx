@@ -1,16 +1,16 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import { RecoilRoot } from 'recoil';
-import Sorteio from './Sorteio';
-import { useListaParticipantes } from '../state/hooks/useListaParticipantes';
-import { useListaAmigoSecreto } from '../state/hooks/useListaAmigoSecreto';
+import { useListaParticipantes } from '../../../state/hooks/useListaParticipantes';
+import { useListaAmigoSecreto } from '../../../state/hooks/useListaAmigoSecreto';
+import { Sorteio } from '../components/Sorteio';
 
-jest.mock('../state/hooks/useListaParticipantes', () => {
+jest.mock('../../../state/hooks/useListaParticipantes', () => {
   return {
     useListaParticipantes: jest.fn(),
   };
 });
 
-jest.mock('../state/hooks/useListaAmigoSecreto', () => {
+jest.mock('../../../state/hooks/useListaAmigoSecreto', () => {
   return {
     useListaAmigoSecreto: jest.fn(),
   };

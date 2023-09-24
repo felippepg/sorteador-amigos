@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface ImageProps {
-  marginTop?: string; // Defina como opcional com o "?"
+  margintop?: string; // Defina como opcional com o "?"
 }
 
 export const ImageContainer = styled.div`
@@ -26,7 +26,7 @@ export const ImageSacola = styled.img`
 export const Image = styled.img<ImageProps>`
   width: 100%;
   height: auto;
-  margin-top: ${(props) => props.marginTop || 0};
+  margin-top: ${(props) => props.margintop || 0};
 
   @media (max-width: 700px) {
     max-width: 328px;

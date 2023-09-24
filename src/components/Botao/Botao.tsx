@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 interface FontSizeProps {
-  fontSize?: string; // Defina como opcional com o "?"
+  fontSize?: string;
 }
 
 export const Botao = styled.button<FontSizeProps>`
@@ -12,10 +12,10 @@ export const Botao = styled.button<FontSizeProps>`
   margin-top: 0.5em;
   cursor: pointer;
   display: flex;
-  align-items: center; /* Centraliza o ícone verticalmente */
+  width: fit-content;
+  align-items: center;
 
   @media (max-width: 700px) {
     font-size: ${(props) => props.fontSize || '1.5em'};
-    /* font-size: 1.5em; */
   }
 `;

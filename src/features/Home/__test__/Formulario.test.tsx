@@ -1,6 +1,6 @@
 import { act, fireEvent, render, screen } from '@testing-library/react';
-import Formulario from './Formulario';
 import { RecoilRoot } from 'recoil';
+import Formulario from '../components/Formulario/Formulario';
 
 describe('Comportamento do Formulario.tsx', () => {
   test('Deveria não salvar um amigo caso o input esteja vazio', async () => {

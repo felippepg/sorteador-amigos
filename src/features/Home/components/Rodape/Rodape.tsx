@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom';
-import { useListaParticipantes } from '../../../state/hooks/useListaParticipantes';
-import { Botao } from '../../Estilizados/Botao/Botao';
-import { Footer } from '../../Estilizados/Footer/Footer';
-import { Icon } from '../../Estilizados/Icon/Icon';
-import { useSortearAmigoSecreto } from '../../../state/hooks/useSortearAmigoSecreto';
-import { Image, ImageSacola } from '../Formulario/Img';
+import { useListaParticipantes } from '../../../../state/hooks/useListaParticipantes';
+import { Botao } from '../../../../components/Botao/Botao';
+import { useSortearAmigoSecreto } from '../../../../state/hooks/useSortearAmigoSecreto';
+import { Footer } from './Footer';
+import { ImageSacola } from '../../../../components/Img/Img';
+import { Icon } from '../../../../components/Icon/Icon';
 
 const Rodape = () => {
   const listaParticipantes = useListaParticipantes();

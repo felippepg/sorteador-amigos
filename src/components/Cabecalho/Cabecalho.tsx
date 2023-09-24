@@ -1,8 +1,4 @@
-import {
-  Image,
-  ImageContainer,
-  ImageLogoContainer,
-} from '../../Funcionais/Formulario/Img';
+import { Image, ImageContainer, ImageLogoContainer } from '../Img/Img';
 import { Header } from '../Header/Header';
 
 const Cabecalho = () => {
@@ -23,7 +19,7 @@ const Cabecalho = () => {
         <ImageContainer>
           <Image
             src={process.env.PUBLIC_URL + '/participante.png'}
-            marginTop="5vh"
+            margintop="5vh"
             alt="logo participante"
           />
         </ImageContainer>
