@@ -1,6 +1,6 @@
 # Sorteador de Amigos 🎁
 
-![Badge de Em Andamento](https://img.shields.io/badge/Status-Em%20Andamento-yellow)
+![Badge Concluído](https://img.shields.io/badge/Status-Concluído-brightgreen)
 
 Bem-vindo ao projeto Sorteador de Amigos! Este é um projeto em andamento como parte de um curso com foco em testes automatizados de aplicações React. O objetivo deste projeto é criar uma aplicação simples que permita aos usuários sortear nomes de amigos de forma aleatória, tornando a organização de eventos e presentes mais divertida.
 
